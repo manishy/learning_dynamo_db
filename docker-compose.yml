@@ -10,6 +10,7 @@ services:
         - "5432:5432"
   dynamodb:
     image: amazon/dynamodb-local
+    command: -jar DynamoDBLocal.jar -sharedDb -dbPath /home/dynamodblocal/data/
     # networks:
     #   - backend
     ports:
