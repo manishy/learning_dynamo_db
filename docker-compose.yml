@@ -19,6 +19,7 @@ services:
     # environment:
     #   - PSQL_DB_URL=${PROTOCOL}://${DB_USER}:${PASSWORD}@${HOST}:${PORT}/${DATABASE}
 volumes:
-  storage:
+  psql_data:
+  dynamodb_data:
 #networks:
 #  backend:
