@@ -28,8 +28,8 @@ const params = {
         "year": year,
         "title": title,
         "info": {
-            "plot": "Nothing happens at all.",
-            "rating": 0
+            "plot": "Helllo all",
+            "rating": 1
         }
     }
 };
