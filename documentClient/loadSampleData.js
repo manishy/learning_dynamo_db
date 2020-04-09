@@ -11,9 +11,9 @@ const docClient = new AWS.DynamoDB.DocumentClient();
 const put = (params)=>{
     docClient.put(params, function(err, info) {
         if (err) {
-            console.error("Unable to add movie", data.title, ". Error JSON:", JSON.stringify(err, null, 2));
+            console.error("Unable to add movie", params.Item.title, ". Error JSON:", JSON.stringify(err, null, 2));
         } else {
-            console.log("PutItem succeeded:", data.title);
+            console.log("PutItem succeeded:", params.Item.title);
         }
     });
 };
